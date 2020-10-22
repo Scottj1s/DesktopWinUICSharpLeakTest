@@ -22,9 +22,6 @@ using Microsoft.UI.Xaml.Shapes;
 
 namespace DesktopWinUICSharpLeakTest
 {
-
-
-
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
     /// </summary>

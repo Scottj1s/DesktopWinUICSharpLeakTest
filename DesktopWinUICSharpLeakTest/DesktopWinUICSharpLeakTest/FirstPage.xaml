@@ -9,7 +9,6 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <StackPanel>
-        <Button Content="C#: Navigate to SecondPage" Click="Button_Click" />
-        <ListView x:Name="TheListView" />
+        <Button Content="Leak" Click="Button_Click" />
     </StackPanel>
 </Page>

@@ -24,13 +24,6 @@
     <None Remove="App.xaml" />
     <None Remove="FirstPage.xaml" />
     <None Remove="MainWindow.xaml" />
-    <None Remove="SecondPage.xaml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Update="SecondPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
 
   <ItemGroup>

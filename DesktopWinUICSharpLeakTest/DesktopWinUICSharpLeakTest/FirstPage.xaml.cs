@@ -18,6 +18,11 @@ using Microsoft.UI.Xaml.Navigation;
 
 namespace DesktopWinUICSharpLeakTest
 {
+    public class LeakedObject : Page 
+    {
+        byte[] bytes = new byte[10_000_000];
+    };
+
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
@@ -26,21 +31,11 @@ namespace DesktopWinUICSharpLeakTest
         public FirstPage()
         {
             this.InitializeComponent();
-
-            this.TheListView.ItemsSource = GetItems();
-        }
-
-        public IEnumerable<string> GetItems()
-        {
-            for (int i = 0; i < 1000; i++)
-            {
-                yield return "Item " + (i + 1);
-            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            App.Navigate(typeof(SecondPage));
+            var leak = new LeakedObject();
         }
     }
 }
