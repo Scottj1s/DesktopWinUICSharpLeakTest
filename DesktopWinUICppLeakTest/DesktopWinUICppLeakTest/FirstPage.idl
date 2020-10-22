@@ -1,8 +1,0 @@
-namespace DesktopWinUICppLeakTest
-{
-    [default_interface]
-    runtimeclass FirstPage : Microsoft.UI.Xaml.Controls.Page
-    {
-        FirstPage();
-    }
-}
