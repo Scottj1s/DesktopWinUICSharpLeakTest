@@ -1,0 +1,10 @@
+import "MainWindow.idl";
+
+namespace DesktopWinUICppLeakTest
+{
+    [default_interface]
+    runtimeclass App : Microsoft.UI.Xaml.Application
+    {
+        static void Navigate(String pageTypeName);
+    }
+}

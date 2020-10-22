@@ -1,0 +1,8 @@
+namespace DesktopWinUICppLeakTest
+{
+    [default_interface]
+    runtimeclass SecondPage : Microsoft.UI.Xaml.Controls.Page
+    {
+        SecondPage();
+    }
+}
