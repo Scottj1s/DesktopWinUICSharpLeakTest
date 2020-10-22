@@ -1,4 +1,5 @@
 Prereqs:
+* nuget.exe v5.8.0-preview.3 from nuget.org
 * .NET SDK 5.0.100-rtm.20515.8
 * https://aka.ms/dotnet/net5/5.0.1xx/daily/Sdk/dotnet-sdk-win-x64.exe
 * https://aka.ms/dotnet/net5/5.0.1xx/daily/Sdk/dotnet-sdk-win-x86.exe
