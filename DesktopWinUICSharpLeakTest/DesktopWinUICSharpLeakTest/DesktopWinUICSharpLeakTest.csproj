@@ -6,7 +6,8 @@
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetPlatformMinVersion>10.0.17134.0</TargetPlatformMinVersion>
     <RootNamespace>DesktopWinUICSharpLeakTest</RootNamespace>
-
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <Platforms>AnyCPU;x86;x64</Platforms>
     <SelfContained>true</SelfContained>

@@ -38,8 +38,11 @@ namespace DesktopWinUICSharpLeakTest
             static WeakReference MakeWeakRef() => new WeakReference(new LeakedObject());
 
             var weakRef = MakeWeakRef();
-            GC.Collect();
-            GC.WaitForPendingFinalizers();
+            for (int i = 0; i < 1000 && weakRef.IsAlive; i++)
+            {
+                GC.Collect();
+                GC.WaitForPendingFinalizers();
+            }
             ((Button)sender).Content = weakRef.IsAlive ? "object leaked" : "object collected";
         }
     }
