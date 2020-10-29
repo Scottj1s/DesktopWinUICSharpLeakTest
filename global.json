@@ -1,6 +1,7 @@
 { 
   "sdk": { 
     "version": "5.0.100-rtm.20515.8", 
+    "xversion": "5.0.0", 
     "allowPrerelease": true 
   } 
 } 

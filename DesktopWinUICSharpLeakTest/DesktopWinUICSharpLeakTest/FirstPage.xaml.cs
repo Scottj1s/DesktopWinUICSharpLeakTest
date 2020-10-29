@@ -35,7 +35,12 @@ namespace DesktopWinUICSharpLeakTest
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var leak = new LeakedObject();
+            static WeakReference MakeWeakRef() => new WeakReference(new LeakedObject());
+
+            var weakRef = MakeWeakRef();
+            GC.Collect();
+            GC.WaitForPendingFinalizers();
+            ((Button)sender).Content = weakRef.IsAlive ? "object leaked" : "object collected";
         }
     }
 }

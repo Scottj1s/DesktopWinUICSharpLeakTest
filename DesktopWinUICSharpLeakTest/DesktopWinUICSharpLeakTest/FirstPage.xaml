@@ -9,6 +9,6 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <StackPanel>
-        <Button Content="Leak" Click="Button_Click" />
+        <Button Content="Test Leak" Click="Button_Click" />
     </StackPanel>
 </Page>
